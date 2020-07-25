@@ -18,7 +18,7 @@ module.exports = {
    */
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    title: 'پروژه نمونه',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,8 +27,101 @@ module.exports = {
         name: 'description',
         content: process.env.npm_package_description || '',
       },
+      {
+        hid: 'http-equiv',
+        'http-equiv': 'X-UA-Compatible',
+        content: 'IE=edge,chrome=1',
+      },
+      { hid: 'theme-color', name: 'theme-color', content: '#0A93D5' },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'nuxt template project, vuetify, nuxt.js, vue.js, vuex, نمونه پروژه ناکست, ویوتیفای',
+      },
+      {
+        hid: 'author',
+        name: 'author',
+        content: 'Mahdad Ghasemian , مهداد قاسمیان',
+      },
+
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'نمونه پروژه ناکست',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content:
+          'https://github.com/MahdadGhasemian/vue-nuxt-vuetify-service-template',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'نمونه پروژه نوشته شده به کمک nuxt.js + vue.js و لایبراری vuetify',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://www.example.com/img/vue-nuxt-vuetify-template.jpg',
+      },
+
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content:
+          'https://github.com/MahdadGhasemian/vue-nuxt-vuetify-service-template',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'نمونه پروژه ناکست',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'نمونه پروژه نوشته شده به کمک nuxt.js + vue.js و لایبراری vuetify',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://www.example.com/img/vue-nuxt-vuetify-template.jpg',
+      },
+
+      {
+        hid: 'apple-mobile-web-app-capable',
+        name: 'apple-mobile-web-app-capable',
+        content: 'yes',
+      },
+      {
+        hid: 'apple-mobile-web-app-status-bar-style',
+        name: 'apple-mobile-web-app-status-bar-style',
+        content: 'default',
+      },
+      {
+        hid: 'apple-mobile-web-app-title',
+        name: 'apple-mobile-web-app-title',
+        content: 'نمونه پروژه ناکست',
+      },
+      {
+        hid: 'apple-touch-icon',
+        name: 'apple-touch-icon',
+        content: '/icon-152x152.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://www.example.com' },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -75,7 +168,20 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    // Doc: https://www.npmjs.com/package/@nuxtjs/sitemap
+    '@nuxtjs/sitemap',
   ],
+  /*
+   ** Google Analytics configuration
+   ** See https://github.com/nuxt-community/analytics-module
+   */
+  googleAnalytics: {
+    id: 'UA-xxxxxxxxx-y',
+    // debug: {
+    //   enabled: true,
+    //   sendHitTask: true
+    // }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -135,5 +241,11 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
+  },
+  /*
+   ** sitemap config
+   */
+  sitemap: {
+    hostname: 'https://www.example.com',
   },
 }

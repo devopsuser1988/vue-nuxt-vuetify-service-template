@@ -1,0 +1,17 @@
+.test-border-class-red {
+  border: solid 1px red !important;
+}
+
+.test-border-class-green {
+  border: solid 1px green !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0.2;
+}

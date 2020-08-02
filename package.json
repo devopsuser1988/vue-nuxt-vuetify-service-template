@@ -1,6 +1,6 @@
 {
   "name": "vue-nuxt-vuetify-service-template",
-  "version": "1.0.6-beta",
+  "version": "1.0.7-beta",
   "description": "A SSR Sevice Template in vue, nuxt, vuetify",
   "author": "Mahdad Ghasemian",
   "scripts": {
@@ -21,8 +21,7 @@
     "moment-jalaali": "^0.9.2",
     "moment-timezone": "^0.5.31",
     "nuxt": "^2.12.2",
-    "vue-persian-datetime-picker": "^2.1.5",
-    "@nuxtjs/vuetify": "^1.11.2"
+    "vue-persian-datetime-picker": "^2.1.5"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
@@ -31,6 +30,7 @@
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "@vue/test-utils": "^1.0.3",
+    "@nuxtjs/vuetify": "^1.11.2",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
     "eslint": "^7.1.0",

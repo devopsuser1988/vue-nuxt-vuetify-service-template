@@ -1,6 +1,6 @@
 {
   "name": "vue-nuxt-vuetify-service-template",
-  "version": "1.0.0",
+  "version": "1.0.1-beta",
   "description": "A SSR Sevice Template in vue, nuxt, vuetify",
   "author": "Mahdad Ghasemian",
   "scripts": {

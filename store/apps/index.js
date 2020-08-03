@@ -111,7 +111,7 @@ const apps = [
   {
     name: 'orders',
     icon: 'mdi-calendar-month',
-    title: 'مدیریت سفارش ها',
+    title: '۲مدیریت سفارش ها',
     color: 'purple accent-4',
     height: 150,
     cols: 4,

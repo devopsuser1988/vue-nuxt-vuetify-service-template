@@ -7,8 +7,8 @@ module.exports = {
    ** server config
    */
   server: {
-    // port: process.env.TEMPLATE_SITE_NUXT_PORT,
-    // host: process.env.TEMPLATE_SITE_NUXT_HOST,
+    port: process.env.PORT || 80,
+    host: process.env.HOST || '0.0.0.0',
     timing: {
       total: true,
     },

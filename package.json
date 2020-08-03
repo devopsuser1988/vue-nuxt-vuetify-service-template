@@ -1,11 +1,11 @@
 {
   "name": "vue-nuxt-vuetify-service-template",
-  "version": "1.0.13-beta",
+  "version": "1.0.14-beta",
   "description": "A SSR Sevice Template in vue, nuxt, vuetify",
   "author": "Mahdad Ghasemian",
   "scripts": {
     "postinstall": "nuxt build",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "nuxt build",
     "start": "nuxt start",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",

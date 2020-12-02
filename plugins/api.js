@@ -2,7 +2,8 @@ const DEFAULT_SKIP = 0
 const DEFAULT_LIMIT = 1000
 
 const urlRegister = 'users/register'
-const urlAuth = 'users/login'
+//const urlAuth = 'users/login'
+const urlRequestOTP = 'account/login?type=mobilePhone'
 const urlGetUserInfo = 'users/getUserInfo'
 const urlGetCars = 'basics/car/gets'
 const urlAddCar = 'basics/car/add'
@@ -48,8 +49,8 @@ export default ({ app }, inject) => {
     athenticateUser({ userName, password }) {
       return new Promise((resolve, reject) => {
         app.$axios
-          .$post(urlAuth, {
-            user_name: userName,
+          .$post(urlRequestOTP, {
+            mobilePhone: userName,
             password,
           })
           .then((result) => {
